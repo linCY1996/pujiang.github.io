@@ -1,0 +1,252 @@
+li{
+    list-style: none;
+}
+ul{
+    list-style: none;
+}
+h1,h2{
+    font-size: 25px;
+    line-height: 25px;
+}
+h3,h4{
+    font-size:20px;
+    line-height: 20px;
+}
+h5,h6{
+    font-size: 16px;
+    line-height: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.toll{
+    
+    width:100%; 
+    height: 100%;
+    /* border: 1px solid red; */
+    background:-webkit-linear-gradient(top,rgb(81, 99, 18),rgb(118, 150, 1),rgb(245, 240, 240)),url(../images/bg.png) repeat;
+}
+.toll1{
+    position: relative;
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    /* border: 1px ridge red; */
+}
+.top{
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+.top-img{
+    display: inline-block;
+}
+.top-img img{
+    position: absolute;
+    top: -14px;
+    left: -27px;
+    width: 146px;
+    height: 113px;
+}
+.top-text{
+   
+    display: inline-block; 
+    border: 1px solid black
+}
+.nav1{
+    font-family: "STXingkai";
+    font-size: 33px;
+    line-height: 33px;
+    position: absolute;
+    top:0px;
+    left: 88px;
+    background: linear-gradient(to right,rgb(109, 4, 65),rgb(21, 126, 103),rgb(126, 124, 7));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.nav2{
+    font-family: "FZShuTi";
+    position: absolute;
+    top:37px;
+    left: 88px;
+    background: linear-gradient(to right,rgb(109, 4, 65),rgb(2, 63, 50),black);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.Jiange{
+    position: absolute;
+    left:446px;
+    top:22px;
+    display: inline-block;
+    width: 1px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+.Didian{
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    left: 457px;
+    width: 150px;
+    height: 60px;
+    /* border: 1px solid red; */
+
+}
+.nav3{
+    position: absolute;
+    top: -16px;
+    font-family: "STXinwei";
+}
+.nav4{
+    position: absolute;
+    top:6px;
+    font-family: "STXinwei";
+}
+.top-right{
+    position: absolute;
+    top: 0px;
+    left:956px;
+    /* border: 1px solid red; */
+}
+.top-right p{
+    display: inline-block;
+    font-family: "STXinwei"
+}
+.Jiange1{
+    position: absolute;
+    left:1022px;
+    top:17px;
+    display: inline-block;
+    width: 0px;
+    height: 17px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+/* ///////////////////////Menu//////////////////////////// */
+.nav-title{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    height: 37px;
+    /* ma rgin: 0 auto; */
+    /* border: 1px solid rgb(114, 107, 6); */
+}
+.clearfix{
+    padding: 0px 0;
+    display:flex;
+    justify-content: space-around;
+    width: 99%;
+    height: 30px;
+    margin-top: -5px;
+    /* margin: -33px auto 0 auto; */
+    border: 5px outset rgb(99, 109, 6);
+    border-radius: 30px 30px;
+    box-shadow: 0 10px 3px rgb(54, 53, 53);
+}
+.col-1{
+    text-align: center;
+    line-height: 27px;
+    width: 128px;
+    height: 27px;
+    background:rgb(53, 102, 4) url(../images/bg.png) repeat;
+    border: 2px inset rgb(73, 21, 21);
+    border-radius: 15px 15px;
+}
+
+.col-1 a{
+    color: rgb(255, 255, 255);
+    font-family: "STXinwei";
+    font-size: 19px; 
+    text-decoration:none;       /*去掉下划线*/
+}
+.col-1:hover{
+    background-color: rgb(82, 59, 18);
+
+}
+/* /////////////////////文化插入//////////////////// */
+.wenhua-tall{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background: url(../images/DT.png);
+    text-align: center;
+    font-family: "STXinwei";
+    font-size: 25px;
+}
+/* .wenhua-tall ul li{
+    transition: all 0.6s;
+    transform: scale(1.1);
+} */
+.wenhua-tall ul li img{
+    width: 20px;
+    height: 20px;
+}
+.wenhua-tall ul li a{
+    list-style: none;
+    text-decoration: none;
+    background: linear-gradient(to right,rgb(50, 127, 146),rgb(19, 29, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.one{
+    position: absolute;
+    top: 190px;
+    left: 180px;
+}
+.two{
+    position: absolute;
+    top: 73px;
+    left: 455px;
+}
+.three{
+    position: absolute;
+    top: 352px;
+    left: 428px;
+}
+.four{
+    position: absolute;
+    top: 500px;
+    left: 723px;
+}
+.five{
+    position: absolute;
+    top: 229px;
+    left: 700px;
+}
+.six{
+    position: absolute;
+    top: 600px;
+    left: 100px;
+}
+.seven{
+    position: absolute;
+    top: 650px;
+    left: 483px;
+}
+.eight{
+    position: absolute;
+    top: 780px;
+    left: 800px;
+}
+.nine{
+    position: absolute;
+    top: 890px;
+    left: 252px;
+}
+.ten{
+    position: absolute;
+    top: 590px;
+    left: 852px;
+}
+.A-one{
+    position: absolute;
+    top: 690px;
+    left: 260px;
+}
+.A-two{
+    position: absolute;
+    top: 900px;
+    left: 552px;
+}

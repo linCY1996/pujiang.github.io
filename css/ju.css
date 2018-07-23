@@ -1,0 +1,332 @@
+li{
+    list-style: none;
+}
+ul{
+    list-style: none;
+}
+h1,h2{
+    font-size: 25px;
+    line-height: 25px;
+}
+h3,h4{
+    font-size:20px;
+    line-height: 20px;
+}
+h5,h6{
+    font-size: 16px;
+    line-height: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.toll{
+    
+    width:100%; 
+    height: 100%;
+    /* border: 1px solid red; */
+    background:-webkit-linear-gradient(top,rgb(81, 99, 18),rgb(118, 150, 1),rgb(245, 240, 240)),url(../images/bg.png) repeat;
+}
+.toll1{
+    position: relative;
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    /* border: 1px ridge red; */
+}
+.top{
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+.top-img{
+    display: inline-block;
+}
+.top-img img{
+    position: absolute;
+    top: -14px;
+    left: -27px;
+    width: 146px;
+    height: 113px;
+}
+.top-text{
+   
+    display: inline-block; 
+    border: 1px solid black
+}
+.nav1{
+    font-family: "STXingkai";
+    font-size: 33px;
+    line-height: 33px;
+    position: absolute;
+    top:0px;
+    left: 88px;
+    background: linear-gradient(to right,rgb(109, 4, 65),rgb(21, 126, 103),rgb(126, 124, 7));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.nav2{
+    font-family: "FZShuTi";
+    position: absolute;
+    top:37px;
+    left: 88px;
+    background: linear-gradient(to right,rgb(109, 4, 65),rgb(2, 63, 50),black);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.Jiange{
+    position: absolute;
+    left:446px;
+    top:22px;
+    display: inline-block;
+    width: 1px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+.Didian{
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    left: 457px;
+    width: 150px;
+    height: 60px;
+    /* border: 1px solid red; */
+
+}
+.nav3{
+    position: absolute;
+    top: -16px;
+    font-family: "STXinwei";
+}
+.nav4{
+    position: absolute;
+    top:6px;
+    font-family: "STXinwei";
+}
+.top-right{
+    position: absolute;
+    top: 0px;
+    left:956px;
+    /* border: 1px solid red; */
+}
+.top-right p{
+    display: inline-block;
+    font-family: "STXinwei"
+}
+.Jiange1{
+    position: absolute;
+    left:1022px;
+    top:17px;
+    display: inline-block;
+    width: 0px;
+    height: 17px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+/* ///////////////////////Menu//////////////////////////// */
+.nav-title{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    height: 37px;
+    /* ma rgin: 0 auto; */
+    /* border: 1px solid rgb(114, 107, 6); */
+}
+.clearfix{
+    padding: 0px 0;
+    display:flex;
+    justify-content: space-around;
+    width: 99%;
+    height: 30px;
+    margin-top: -5px;
+    /* margin: -33px auto 0 auto; */
+    border: 5px outset rgb(99, 109, 6);
+    border-radius: 30px 30px;
+    box-shadow: 0 10px 3px rgb(54, 53, 53);
+}
+.col-1{
+    text-align: center;
+    line-height: 27px;
+    width: 128px;
+    height: 27px;
+    background:rgb(53, 102, 4) url(../images/bg.png) repeat;
+    border: 2px inset rgb(73, 21, 21);
+    border-radius: 15px 15px;
+   
+}
+.col-1 a{
+    color: rgb(255, 255, 255);
+    font-family: "STXinwei";
+    font-size: 19px; 
+    text-decoration:none;       /*去掉下划线*/
+}
+.col-1:hover{
+    background-color: rgb(240, 185, 83);
+
+}
+/* ///////////////////////////内容填充///////////////////////////// */
+.Tian-C{
+    width: 100%;
+    background:url(../images/beijing.png) repeat;
+}
+.Tian-C h1{
+    padding: 0;
+    margin: 0;
+    font-family: "STXingkai";
+    font-size: 45px;
+    text-align: center;
+    margin-top: 25px;
+}
+.J-J-jingqu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+    background: url(../images/beijing.png) repeat;
+}
+.J-J-jingqu-ch1{
+    width: 68%;
+    /* background-color: rgb(110, 18, 18); */
+}
+.J-J-jingqu-ch1 ul li{
+    height: 260px;
+    list-style: none;
+}
+.J-J-jingqu-ch1 ul li p{
+    font-family: "Microsoft JhengHei";
+    font-size: 18px;
+    font-weight: 500;
+}
+.J-J-jingqu-ch1 ul li img{
+    max-width: 85%;
+    height: 141px;
+    border: 2px outset black;
+    box-shadow: 3px 4px 4px rgb(65, 4, 4);
+}
+.J-J-jingqu-ch1 ul li div{
+    float: left;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+.J-J-line{
+    width: 0%;
+    background-color: black;
+    border: 1px dotted rgb(26, 24, 24);
+    box-shadow: 3px 0px 3px rgb(51, 3, 3);
+}
+.J-J-jingqu-ch2{
+    position: relative;
+    width: 28%;
+}
+.clear{
+    clear: both;
+}
+.jingqu-ch1{
+    position: absolute;
+    top: 15px;
+    max-width: 100%;
+    height: 30%;
+    /* background-color: rgb(184, 96, 96); */
+    font-family: "STXinwei";
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.jingqu-ch1 p{
+    font-family: "Microsoft JhengHei";
+    font-size: 14px;
+    font-weight: 500;
+}
+/* .jingqu-ch1-imgs{
+    text-align: center;
+} */
+.jingqu-ch1-imgs img{
+    width: 95%;
+    height: 200px;
+    border: 1px outset rgb(26, 24, 24);
+    box-shadow: 3px 0px 3px rgb(51, 3, 3);
+}
+.remen{
+    position: absolute;
+    top: 490px;
+    width: 98%;
+    height: 300px;
+    /* background-color: rgb(177, 115, 115); */
+}
+.remen h1{
+    font-family: "STXinwei";
+}
+
+.remen-chl-img1 img{
+    width: 45%;
+    height: 90px;
+}
+.remen-chl-img1 span{
+    position: absolute;
+    top: 57px;
+    left: 162px;
+    font-family: "STXinwei";
+    font-size: 22px;
+    line-height: 45px;
+}
+.remen-chl-img2 img{
+    width: 45%;
+    height: 90px;
+}
+.remen-chl-img2 span{
+    position: absolute;
+    top: 154px;
+    left: 162px;
+    font-family: "STXinwei";
+    font-size: 22px;
+    line-height: 45px;
+}
+.remen-chl-img3 img{
+    width: 45%;
+    height: 90px;
+}
+.remen-chl-img3 span{
+    position: absolute;
+    top: 246px;
+    left: 162px;
+    font-family: "STXinwei";
+    font-size: 22px;
+    line-height: 45px;
+}
+.p-j-yushuo{
+    position: absolute;
+    top: 840px;
+    width: 94%;
+    height: 141px;
+    /* background-color: rgb(170, 74, 74); */
+}
+.p-j-yushuo h1{
+    font-family: "STXinwei";
+    font-size: 27px;
+    /* line-height: 15px; */
+}
+.p-j-yushuo p{
+    font-family: "STXinwei";
+    font-size: 22px;
+}
+.p-j-more{
+    position: absolute;
+    top: 1030px;
+    width: 94%;
+    /* background-color: brown; */
+}
+.p-j-more h1{
+    font-family: "STXinwei";
+    font-size: 27px;
+    /* line-height: 15px; */
+}
+.imgs{
+    width: 89%;
+    /* background-color: blueviolet; */
+}
+.img-more img{
+    width: 48%;
+    height: 83px;
+}

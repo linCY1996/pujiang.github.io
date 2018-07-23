@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pujiang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="jq/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="toll">
+       <div class="toll1">
+            <!--///////////////////////top ////////////////////////////////////////////-->
+            <div class="top">
+                <div class="top-img">
+                    <img src="images/pj.png" alt="logo">
+                </div>
+                <div class="top-text">
+                    <h1 class="nav1">大美蒲江，生态绿色</h1>
+                    <p class="nav2">The Pujiang is beautiful,green and ecological!</p>
+                </div>
+                <div class="Jiange"></div>
+                <div class="Didian">
+                    <h6 class="nav3">国家AAAA级景区</h6>
+                    <h6 class="nav4">成都市最美绿化带</h6>
+                </div>
+                <div class="Jiange1"></div>
+                <div class="top-right">
+                    <p>设为首页</p>
+                    <p>联系我们</p>
+                </div>
+            </div>
+            <!-- ///////////////////////////Menu/////////////////////////////////// -->
+            <div class="nav-title">
+                <ul class="clearfix">
+                    <li class="col-1" style="background-color: peru;"><a href="PJ-1.html">网站首页</a></li>
+                    <li class="col-1"><a href="pu-jiangjieshao.html">蒲江介绍</a></li>
+                    <li class="col-1"><a href="ju-jiao.html">聚焦景区</a></li>
+                    <li class="col-1"><a href="jingdian.html">景区景点</a></li>
+                    <li class="col-1"><a href="JD-wenhua.html">景区文化</a></li>
+                    <li class="col-1"><a href="J-D.html">人文历史</a></li>
+                    <li class="col-1"><a href="Te-chan.html">蒲江特产</a></li>
+                    <li class="col-1"><a href="#">地图索览</a></li>
+                    <li class="col-1"><a href="Lian-Xi.html">联系我们</a></li>
+                </ul>
+            </div>
+        
+            <!-- ////////////////////////轮播图 /////////////////////////////////////////////-->
+            <div class="container">
+                <ul class="con-2">
+                    <li class="first"><img src="images/lun1.jpg"></li>
+                    <li class="second"><img src="images/lun2.jpg"></li>
+                    <li class="third"><img src="images/lun3.jpg"></li>
+                    <li class="fourth"><img src="images/lun4.jpg"></li>
+                    <li class="center"><img src="images/lun5.jpg"></li>
+                    <li class="fourth six"><img src="images/lun10.jpg"></li>
+                    <li class="third seven"><img src="images/lun11.jpg"></li>
+                    <li class="second last"><img src="images/lun13.jpg"></li> 
+                </ul>
+                <div class="button">
+                    <div class="left"> < </div>
+                    <div class="right"> > </div>
+                </div>
+            </div>
+                <script type="text/javascript">
+                    var nowTime=new Date();//获取本地时间
+                  $(".left").click(function () {
+                      if(new Date()-nowTime>=500){
+                          nowTime=new Date();
+                          tab(true)
+                      }
+                  })
+                    $(".right").click(function () {
+                        if(new Date()-nowTime>=500){
+                            nowTime=new Date();//上一次执行的时间
+                            tab(false)
+                        }
+                    })
+                    function tab(dir) {//形参
+                        var arrW=[],arrH=[],arrL=[],arrT=[],arrZ=[];
+                        $(".container ul li").each(function(i){
+                            arrW[i]=$(this).css("width");
+                            arrH[i]=$(this).css("height");
+                            arrL[i]=$(this).css("left");
+                            arrT[i]=$(this).css("top");
+                            arrZ[i]=$(this).css("z-index");
+                        })
+                        $(".container ul li").each(function(i){
+                            var n;
+                            if(dir){//点击左按钮
+                                n=i-1;
+                                if(n<0)n=7;
+                            }
+                            else{//点击右按钮
+                                n=i+1;
+                                if(n>7)n=0;
+                            }
+                            $(this).css("z-index",arrZ[n]);
+                            $(this).animate({
+                                "width":arrW[n],
+                                "height":arrH[n],
+                                "top":arrT[n],
+                                "left":arrL[n],
+                            },400);
+                        })
+                    }
+                </script>
+       
+        <!-- ////////////////////////////简介内容 ////////////////////////////////////////////-->
+            <div class="wrap">
+                <div class="wrap-video">
+                    <img src="images/video.png" alt="video" controls autoplay>
+                    <div class="line"></div>
+                    <div class="video">
+                        <video width="370" height="170">
+                            <source src="video/四川蒲江 非洲三兄妹 萌翻全场.qlv" type="video.qlv">
+                            <source src="video/四川蒲江 非洲三兄妹 萌翻全场.ogg" type="video.ogg">
+                            <source src="video/四川蒲江 非洲三兄妹 萌翻全场.mp4" type="video.mp4">
+                            <source src="video/四川蒲江 非洲三兄妹 萌翻全场.webm" type="video.webm">
+                            <object src="video/四川蒲江 非洲三兄妹 萌翻全场.mp4" width="370" height="170">
+                                <embed width="370" height="170" src="video/四川蒲江 非洲三兄妹 萌翻全场.swf">
+                            </object>
+                        </video>
+                    </div>
+                </div>
+                <div class="wrap-jingqu">
+                        <img src="images/jingqu.png" alt="video">
+                        <div class="line"></div>
+                        <div class="jingqu-img">
+                            <a href="http://www.selake.com/">
+                                <img class="imgs" src="images/lu9.jpg" alt="信息介绍"></a>
+                        </div>
+                        <div class="jingqu-text">
+                            <a class="te" href="#">&nbsp;&nbsp;&nbsp;&nbsp;石象湖生态产业示范区位于成都市蒲江县境内，面积20平方公里，成 雅高速公路横跨示范区南端，示范区入口距成都86公里，距雅安42公里， 距成都双流机场77公里。
+                                示范区森林覆盖率达60%以上，1600余亩湖面，空气质量优于I级，是 成都平原的“天然氧吧”，其绝佳的自然生态犹如一块翡翠镶嵌在成都平 原上。
+                            </a>
+                        </div>
+                        <div class="jingqu-texts">
+                            <ul>
+                                <li class="texts-ch1"><a class="text-ch1-a" href="http://www.selake.com/">>> 蒲江石窟位于四川省成都市蒲江县西南10公里处的朝阳湖山崖上和鹤山镇蒲砚村。</a><span>4-22</span></li>
+                                <li class="texts-ch2"><a class="text-ch1-a" href="http://chengdu.cncn.com">>> 长滩湖位于成都市蒲江县，湖面3360余亩、水深30余米。拥有丰富的资源</a><span>4-22</span></li>
+                                <li class="texts-ch3"><a class="text-ch1-a" href="http://www.qionglai.com/">>> 成都战役纪念馆位于蒲江县西来古镇铜鼓村，已被省政府和省国防教育委员会正式命名为“四川省国防教育基地”。</a><span>4-22</span></li>
+                                <li class="texts-ch4"><a class="text-ch1-a" href="http://www.sccdy.net/">>> 四川省樱桃山景区由4个自然村组成，分别是金花村、韩桥村、官帽村和石岩村。</a><span>4-22</span></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="wrap-jieshao">
+                        <img src="images/jianjie1.png" alt="video">
+                        <div class="line"></div>
+                        <div class="jieshao-ch1">
+                            <a class="te" href="http://www.pujiang.gov.cn/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蒲江县是成都市下辖县，位于成都、眉山、雅安三市交汇处。县域东邻眉山市东坡区、彭山区，西靠名山区，南接丹棱县，北接邛崃市。毗邻天府新区，属成都“半小时经济圈”，是“进藏入滇”的咽喉要道，交通便利。全县幅员面积583平方公里，辖8镇4乡。
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蒲江历史悠久。据县内发现的新石器时代文物鉴证，至少在4000年前，即有人类活动。蒲江地域，古代属蜀国地。秦灭蜀后，隶蒲阳县。汉属临邛县。南北朝西魏恭帝元年（554年）正式建县，名广定。
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蒲江县古名广定，始置于西魏恭帝元年（554年）。同时置蒲原郡，郡、县治同地，址在今县城北1里地（原东岳庙一带）。恭帝二年（555年）析临邛县置临溪县，治地在今西崃乡残城址村。是时，广定、临溪县属邛州蒲原郡。
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;隋开皇三年（583年）悉罢全国诸郡，以州统县，广定、临溪县属邛州。隋仁寿元年（601年），改广定曰蒲江（“以南枕蒲水故”）。隋大业三年（607年）罢总管府，改州为郡，以郡统县。同年合邛、雅、登3州为临邛郡，蒲江、临溪县属临邛郡（郡治与严道县治同地，今雅安县多营坪）.
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唐武德元年（618年）改临邛郡为雅州（州治置严道县），蒲江、临溪等16县属雅州。同年，割雅州之蒲江、临溪、临邛等5县，置邛州（州治置依政县）。唐贞观元年（627年）分全国为十道，蒲江、临邛等县属剑南道邛州。唐天宝元年（742年）改州为郡，邛州改为临邛郡。唐至德二年（757年）分剑南道为东、西两川，各置节度使，蒲江、临溪县属剑南道西川临邛郡。唐乾元元年（758年），悉罢全国诸郡，改郡为州。临邛郡改曰邛州，蒲江、临溪属剑南道西川邛州。唐大历四年（769年）临溪县设删华就嶲州，辖临溪、蒲江2县。唐大和四年（830年）分蒲江、临溪两县隶属嶲州（州治今西昌）。唐乾符元年（874年）还蒲江、临溪两县仍属邛州。唐文德元年（888年）划邛、蜀、黎、雅4州置永平军，蒲江、临溪县属永平军邛州。唐大顺二年（891年）废永平军，蒲江、临溪县属剑南道西川邛州。
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1999年，蒲江县辖10个镇、9个乡：鹤山镇、寿安镇、大塘镇、天华镇、西来镇、大兴镇、甘溪镇、五星镇、朝阳湖镇、成佳镇；复兴乡、西南乡、光明乡、白云乡、寿民乡、长秋乡、松华乡、敦厚乡、高桥乡。
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2004年8月26日，撤销天华、五星2镇和松华、敦厚、寿民、西南、高桥5乡。将原天华镇、西南乡和原高桥乡的狮子树、大林、潘沟3个村所属行政区域并入鹤山镇。将原五星镇、松华乡、寿民乡所属行政区域并入寿安镇。将原敦厚乡和原高桥乡的桂花、陡岩、育才、大田4个村所属行政区域并入西来镇。将原大兴镇的沙楼村所属行政区域并入成佳镇。将原高桥乡的玉龙、桥墩2个村所属行政区域并入大兴镇。
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蒲江县位于成都平原西南缘，介于东经103度19分～103度41分、北纬30度5分～30度21分之间。东西最长37公里，南北最宽27.5公里，总面积582.86平方公里。2005年，全县人口25.75万人，耕地22.37万亩。县城鹤山镇距成都市区75公里。县域东邻眉山市东坡区、彭山区，西靠名山区，南接丹棱县，北接邛崃市，东缘与彭山区接界，界长1.8公里；东南缘以长秋山一线与眉山市东坡区接界，界长37.5公里；南缘以界牌湾、月南山一线与丹棱县接界，界长31.4公里；西南缘以陡岩山、两合水、龙潭水库一线与名山区接界，界长31.25公里，北、西北、东北缘以汪染房、余大冲、刘石桥、法明寺、刘码头、石牯牛一线与邛崃市接界，界长59.3公里。蒲江县疆界全长161.25公里。
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蒲江县地质构造形迹由成都凹陷、大兴隆起（隐伏背斜）和熊坡背斜组成。成都凹陷位于成都平原，北起安县，南达名山，西抵灌县（都江堰市），东至金堂县。第四系沉积中心，大体循大邑安仁，经崇庆（崇州市）附近一线北出此段。东西两缘皆有断裂控制，西缘称邛崃至彭县（彭州市）断裂；东缘称成都至蒲江断裂。蒲江县境跨成都凹陷西南段之南部，所跨面积占全境五分之四。
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;县域东西长，南北窄，全县平均海拔534米。地势西南高，最高处白云乡月南山海拔1022米；东北低，最低处寿安镇夏河坝海拔465米。地貌类型以浅丘为主，兼有深丘、山地、平坝。浅丘遍及县境北部和中部，面积352.05平方公里，占全县总面积的60.40%；深丘绵延于县境西南部，面积40.50平方公里，占6.95%；山地分布于县境南部和西南部边缘一线，面积72.27平方公里，占12.40%。平坝沿西北至北东流向的蒲江河、临溪河展布，呈带状平川，在县域东部与成都平原主体衔接，面积118.04平方公里，占20.05%。县境山丘属邛崃山脉东延余脉，有大、小五面山及长秋山。大五面山连绵于县境北和东北部，海拔520米以上的山峰有大定、玉龙、铜鼓、棋盘、福果、金鸡洞等山峰，最高处金鸡洞山海拔607米。小五面山从县境西南部向东北部铺陈，横卧县境中部，海拔535米以上山峰有九仙、红岩、金鹅、狮子、来龙、双凤、白鹤、龙头、黄鹤、钟鹤等山峰，最高处九仙山海拔630米。长秋山峙立于县境西南和南部边缘，海拔658米以上山峰有月南、长秋、看灯、尖山寺、擦耳岩、官帽、玉芝、佛儿岩、太清观、灵鹫等山峰，最高处月南山海拔1022米。
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蒲江县年平均气温16.3℃，平坝、丘陵、山地随地势升高，夏季逐渐缩短，冬季逐渐增长；“两河”下游的寿安地区为夏季最长地区，长秋山区为冬季最长地区。县境属暖水区，“两河”平坝区水温平均比气温高2.0℃；耕作层5～20厘米处，年平均地温在17.9～18.2℃之间，高于年平均气温1.6～1.9℃。县境内日照时数，春夏足而秋冬短；降雪少，年平均降雨量1196.8毫米；年平均相对湿度为85%，除5月份最低为79%外，其余月份均在80%以上；风向以东北风、西南风为主。
+                            </a>
+                        </div>
+                        <div class="jieshao-ch2">
+                            <div class="jieshao-imgs">
+                                <a href="http://www.selake.com/">
+                                    <img class="imgs"src="images/lun3.jpg" alt="景区介绍"></a>
+                            </div>
+                            <div class="jieshao-imgs1">
+                                <a href="http://chengdu.cncn.com">
+                                    <img class="imgs"src="images/lun4.jpg" alt="景区介绍"></a>
+                            </div>
+                            <div class="jieshao-imgs2">
+                                <a href="http://www.qionglai.com/">
+                                    <img class="imgs"src="images/lun5.jpg" alt="景区介绍"></a>
+                            </div>
+                            <div class="jieshao-text">
+                                <ul>
+                                    <li><a href="http://www.selake.com/">>> &nbsp;&nbsp;石象湖生态风景区位于成都市蒲江县境内，在成雅高速公路86公里处，因湖区古刹石象寺而得名。2015年景区森林覆盖率达90%以上。</a></li>
+                                    <li><a href="http://www.selake.com/">>> &nbsp;&nbsp;朝阳湖位于成都市西南蒲江县境内，距成都83公里。由朝阳湖、石象湖、长滩湖和飞仙阁等景点组成，面积110平方公里。朝阳湖景区远离尘世，优雅明洁，景色秀丽，有“水上青城”的美誉。沿湖草木葱翠，其间水鸟出没，仿佛世外桃源，远近闻名，是第一批省级风景名胜区之一。</a></li>
+                                    <li><a href="http://www.qionglai.com/">>> &nbsp;&nbsp;平乐古镇位于成都市西南93公里、邛崃市西南18公里处，是中国的历史文化名镇。平乐古镇素有“一平二固三夹关”的美誉，发源于天台山玉宵峰的白沫江自西向北流经古镇。</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                <div class="wrap-more">
+                        <img src="images/more.png" alt="video">
+                        <div class="line"></div>
+                        <div class="nav-wrap">
+                            <div class="nav-wrap-text">
+                                <ul>
+                                    <li><a href="http://www.scpjzx.com">>> &nbsp;&nbsp;中共蒲江县委十四届五次全体会议召开</a></li>
+                                    <li><a href="http://www.scpjzx.com">>> &nbsp;&nbsp;德国某医疗器械有限公司高层莅蒲考察.</a></li>
+                                    <li><a href="http://www.scpjzx.com">>> &nbsp;&nbsp;蒲江团县委组织召开2018年寒假大学生赴蓉社会调</a></li>
+                                    <li><a href="http://www.scpjzx.com">>> &nbsp;&nbsp;石象湖生态风景区位于成都市蒲江县境内，惠</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-wrap-img">
+                                <ul>
+                                    <li class="imgs-ch1"><a href="http://www.pujiang.gov.cn"><img class="imgs-chl1" src="images/lun15.jpg"></a></li>
+                                    <li class="imgs-ch1"><a href="http://www.pujiang.gov.cn"><img class="imgs-chl2" src="images/lun7.jpg"></a></li>
+                                    <li class="imgs-ch1"><a href="http://www.pujiang.gov.cn"><img class="imgs-chl3" src="images/lun8.jpg"></a></li>
+                                    <li class="imgs-ch1"><a href="http://www.pujiang.gov.cn"><img class="imgs-chl4" src="images/lun9.jpg"></a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                </div>
+            </div>
+            <!-- ////////////////////////风景名胜//////////////////////////////// -->
+            <div class="M-sheng">
+                <img src="images/biaoti.png">
+                <div class="M-sheng-img">
+                    <div class="M-sheng-img-ch1"><a href="http://www.selake.com/"><img class="M-imgs1" src="images/lu5.jpg" alt="tupian"></a></div>
+                    <div class="M-sheng-img-ch1"><a href="http://www.scpjzx.com"><img class="M-imgs2" src="images/lun14.jpg" alt="tupian"></a></div>
+                    <div class="M-sheng-img-ch1"><a href="http://www.scpjzx.com"><img class="M-imgs3" src="images/chaoyanghu.jpg" alt="tupian"></a></div>
+                </div>
+                <div class="M-sheng-text">
+                    <h3>石象湖景区</h3>
+                    <h3>仙鹤桥景区</h3>
+                    <h3>朝阳湖景区</h3>
+                </div>
+            </div>
+            <!-- //////////////////////////饮食文化////////////////////////// -->
+            <div class="Y-S-wenhua">
+                <div class="Y-fenlei">
+                    <img src="images/you.png" alt="you">
+                    <div class="Y-fenlei-text">
+                        <div class="img-text"><a href="http://www.tsichuan.com"><img src="images/lu4.jpg" alt="tupian"></a>
+                        
+                        <h1 class="cani" style="color: white">仙鹤桥景区</h1>
+                        </div>
+                       <div class="img-jieshao">
+                           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成佳茶乡旅游景区位于成都市蒲江县成佳镇，距成都市区80公里，川西旅游环线和成雅高速穿境而过。景区生态环境优美，自然资源丰富，森林覆盖率高达80%，是全国休闲农业与乡村旅游示范县的核心示范区、全国环境优美乡镇、四川省乡村旅游特色镇，成都市AAAA级诚信旅游景区。
+                               <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成佳茶乡旅游景区茶产业优势突出，是国家茶叶标准化种植示范区的核心区、国家级出口茶叶质量安全示范区。现有茶园2.2万亩，其中有机茶园1.2万亩，享有“中国绿茶之乡”的美誉。
+                               <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成佳茶乡旅游景区旅游资源品类丰富。有生态自然的茶园、姹紫嫣红的千亩海棠园、绚丽缤纷的七彩茶林、风光旖旎的长滩湖、龙凤溪湿地、底蕴厚重的茶马古道、自然宁静的原始森林，吸引了大量游客到茶乡观光、品茗、休闲、度假。
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成佳茶乡旅游景区于2010年开始景区建设，以茶为媒，形成三次产业融合发展之势，着力突出景区的自然之美、乡村之美、产业之美，并2011年11月成功创建国家AAA级旅游景区，于2017年1月通过省级生态旅游示范区公示。自景区开始运营以来，取得了初步成果，2016年接待海内外游客约92万人次，实现旅游总收入2.76亿元。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Y-S-ganyan">
+                    <div class="Y-S-ganyan-tel">
+                        <div class="Y-S-ganyan-tel-ch1">
+                            <h3 class="text1">地址：四川省成都市蒲江县</h3>
+                            <h3 id="text2">Tel:13350058238</h3>
+                        </div>
+                        <div class="Y-S-ganyan-tel-ch2">
+                            <h3 id="text3">蒲江县</h3>
+                            <h3 id="text4">温度：25℃~29℃</h3>
+                            <h3 id="text4">风力：小于3级</h3>
+                            <h3 id="text4">紫外线：适中</h3>
+                        </div>
+                        <img src="images/lianjie.png">
+                    </div>
+                    <div class="Y-S-ganyan-GY">
+                        <div class="Y-S-ganyan-GY-ch1"><img src="images/pu.png"></div>
+                        <div class="Y-S-ganyan-GY-ch2">
+                            <img src="images/xianhe2.jpg" alt="">
+                            <div class="Y-S-ganyan-GY-text1">
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;在老318国道一旁，蒲江甘溪镇明月村寂寂无名，而创新型产村相融乡村规划的出炉，如同静水投石，激发了文化传承与新村建设、邛窑旧址与文化项目的联姻，老村落变身国际陶艺村。通过规划引领，让林盘保护、院落打造、乡村旅游，在明月“陶艺村”的载体上，得以整合。实现文化传承、生态保护、农民增收、新型城镇化发展的和谐统一，形成特色鲜明的文化创意产业与乡村旅游互动、产村相融发展新模式，成为成都新型知名乡村旅游目的地和成都新农村建设示范。
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;今天，你来到明月村，也许一不小心，就会走进四川工艺美术大师李清打造的艺术院子，又或在松林间的服装走秀台，看一场“远远阳光房”的服装展示。一间老屋也许就是一个陶艺博物馆，又或是一个设计师们的沙龙，明月村正在显现出浓浓的文化氛围。<a href="http://www.scpjzx.com">[更多]</a>
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        <div class="Y-S-ganyan-GY-ch3">
+                            <img src="images/lu8.jpg" alt="">
+                            <div class="Y-S-ganyan-GY-text2">
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;省级风景名胜区朝阳湖，由三湖一阁组成，即长滩湖、石象湖和飞仙阁。朝阳湖景区位于蒲江县朝阳湖镇长秋山下，湖水面
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;积80余平方公里。主要景点有：陡峭幽深的“通天洞”，晨曦晚照的“莲花山”，花如覆雪的“木
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;兰岛”，群鹤飞舞的“仙鹤山”，山花映水的“杜鹃壁”，神秘莫测的“风动石”，鸳鸯戏水的“野鸭湾”等。朝阳湖处处是景，要树依山生，游鱼翔湖底，空中鹰、鹤翩翔。游人来此，如置身漓江画廊之中。<a href="http://www.scpjzx.com">[更多]</a>
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //////////////////////////////// -->
+                <div class="piaowu-xx">
+                    <h1>票务信息</h1>
+                    <div class="line"></div>
+                    <div class="piaowu-xx-text">
+                        <ul>
+                            <li><a href="http://www.scpjzx.com">1.&nbsp;&nbsp;单人：58元(1.2米以下29元)</a></li>
+                            <li><a href="http://www.scpjzx.com">2.&nbsp;&nbsp;团购价：482元（票三天景区有效）</a></li>
+                            <li><a href="http://www.scpjzx.com">3.&nbsp;&nbsp;军人，战士以及军人家属免费</a></li>
+                            <li><a href="http://www.scpjzx.com">4.&nbsp;&nbsp;本地人持证件照半票优惠</a></li>
+                            <li><a href="http://www.scpjzx.com">5.&nbsp;&nbsp;节假日9折优惠</a></li>
+                            <li><a href="http://www.scpjzx.com">6.&nbsp;&nbsp;记者、报社人员参观凭借相关证件5折优惠</a></li>
+                            <li><a href="http://www.scpjzx.com">7.&nbsp;&nbsp;参观者可凭借票单可免费搭乘观光车</a></li>
+                
+                        </ul>
+                    </div>
+                    <div class="piaowu-xx-img1">
+                        <a href="http://www.scpjzx.com"><img src="images/lu1.jpg" alt=""></a>
+                    </div>
+                    <div class="piaowu-xx-img2">
+                        <a href="http://www.scpjzx.com"><img src="images/lu2.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+          <!-- ////////////////////////友情链接/////////////////////// -->
+            <div class="lianjie">
+                <h2>友情链接：</h2>
+                <div class="lianjie-nav">
+                    <a href="">蒲江旅游文化传媒</a>
+                    <a href="">四川旅游文化公司</a>
+                    <a href="">四川景区传媒文化企业</a>
+                    <a href="">蒲江县政府文案厅</a>
+                </div>
+            </div>
+            <!-- ///////////////////////////FOOT ///////////////////-->
+            <footer class="dibu">
+                <div class="dibu-head">
+                    <p>蒲江简介</p>
+                    <p>招贤纳士</p>
+                    <p>联系我们</p>
+                    <p>广告服务</p>
+                </div>
+                <div class="dibu-foot">
+                    <p>Tel:1323646654/451332312/032484511154/22661648&nbsp;&nbsp;email:423@dfefijvigut</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
